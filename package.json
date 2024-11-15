@@ -1,5 +1,12 @@
 {
   "dependencies": {
     "vite": "^5.4.11"
+  },
+  "homepage": "https://username.github.io/repository-name",
+  "scripts": {
+    "dev": "vite", // For development purposes
+    "build": "vite build", // Build the app for production
+    "predeploy": "npm run build", // Run build before deploying
+    "deploy": "gh-pages -d dist" // Deploy the 'dist' folder to GitHub Pages
   }
 }
