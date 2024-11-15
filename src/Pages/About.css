@@ -1,0 +1,93 @@
+/* Remove the circle effect in the card body */
+
+body{
+    background-image: url('https://t3.ftcdn.net/jpg/04/50/71/00/360_F_450710009_Q2YSfxtNdtWMXvCiHa2Nu8koMDKg6gbU.jpg');
+    background-size: cover; /* Ensure the background image covers the whole page */
+    background-position: center; /* Center the background image */
+}
+
+.card-body {
+    border-radius: 15px; /* Use rounded corners instead of 50% */
+    padding: 25px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+  }
+  
+  /* Hover effect for the card body */
+  .card-body:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+  }
+  
+  /* Card title colors */
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; /* Smooth transition for title color */
+  }
+  
+  .card-title:hover {
+    color: #007bff; /* Change title color on hover */
+  }
+  
+  /* Text color in the card */
+  .card-text {
+    color: #6c757d;
+    line-height: 1.6;
+    transition: color 0.3s ease-in-out; /* Smooth transition for text color */
+  }
+  
+  .card-text:hover {
+    color: #495057; /* Change text color on hover */
+  }
+  
+  /* Add a subtle shadow to the card */
+  .card {
+    border: none; /* Remove default card border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 20px; /* Rounded corners for the card */
+    overflow: hidden; /* Ensure the content fits within the rounded card */
+    transition: all 0.3s ease-in-out; /* Smooth transition for card effects */
+  }
+  
+  /* Hover effect for the card */
+  .card:hover {
+    transform: translateY(-5px); /* Slightly lift the card on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhance the shadow on hover */
+  }
+  
+  /* Card background colors with smooth transition */
+  .card-body.bg-light {
+    background-color: #f0f4f8;
+  }
+  
+  .card-body.bg-light:hover {
+    background-color: #e9ecef;
+  }
+  
+  /* Add a transition for images in the card (remove circle effect) */
+  .card-img-top {
+    border-radius: 10px; /* Use rounded corners for the image */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card-img-top:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+  }
+  
+  /* Additional custom animations */
+  @keyframes cardEntry {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .card {
+    animation: cardEntry 0.6s ease-in-out;
+  }
+  

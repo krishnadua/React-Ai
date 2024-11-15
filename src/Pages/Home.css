@@ -1,0 +1,63 @@
+/* Home.css */
+
+/* Style for chat bubble */
+.message-bubble {
+    max-width: 80%; /* Increased width for better visibility */
+    word-wrap: break-word;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  
+  /* Custom background colors */
+  .bg-primary {
+    background-color: #007bff !important;
+  }
+  
+  .bg-secondary {
+    background-color: #6c757d !important;
+  }
+  
+  /* Styling for the overall chat screen */
+  .chat-screen {
+    max-width: 80%; /* Increased width */
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Styling for the send button */
+  input.form-control {
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure input field takes up full width */
+  }
+  
+  button.btn-primary {
+    border-radius: 25px;
+    border: 1px solid #007bff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure button takes up full width */
+  }
+  
+  /* Add some margin between input field and send button */
+  .input-group button {
+    margin-left: 10px;
+  }
+  
+  /* Responsive input layout */
+  @media (max-width: 576px) {
+    .input-group {
+      flex-direction: column;
+    }
+    
+    .input-group button {
+      margin-top: 10px;
+    }
+  }
+  

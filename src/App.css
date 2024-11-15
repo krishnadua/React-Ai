@@ -1,0 +1,13 @@
+.App{
+  color: red;
+}
+.nav-bar{
+   top: 20;
+   left: 0;
+   background-color: white;
+}
+.Link {
+  
+  margin-right: 30px; 
+  text-decoration: none; /* Removes underline from the links */
+}
