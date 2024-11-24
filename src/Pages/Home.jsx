@@ -7,8 +7,8 @@ function Home() {
   const [image, setImage] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  const googleApiKey = 'AIzaSyDtSm8WyC-AfQXxU42ilgHc6dEfdSRH3MA'; // Your Google API Key
-  const googleCseId = 'a3c0f792f89d349f6'; // Your Custom Search Engine ID
+  const googleApiKey = 'AIzaSyDtSm8WyC-AfQXxU42ilgHc6dEfdSRH3MA';
+  const googleCseId = 'a3c0f792f89d349f6';
 
   const cleanResponse = (text) => {
     // Remove unwanted characters like @mentions, dates, etc.
